@@ -118,23 +118,6 @@ results observed:
 
 The XGBoost model successfully learned non-linear relationships between time-based features and demand levels.
 
-**Feature Importance Analysis**  
-The model’s feature importance visualization helps identify which time features most strongly influence electricity usage:
-```python
-plt.figure(figsize=(8,5))
-plt.barh(X.columns, xgb_model.feature_importances_)
-plt.title("Feature Importance in Electricity Demand Prediction")
-plt.xlabel("Importance Score")
-plt.ylabel("Features")
-plt.show()
-```
-![]()
-Insights:
-
-Hour and Weekday were the most influential predictors, highlighting consistent daily cycles and work-week effects.  
-
-Month contributed significantly, confirming seasonal trends in consumption.  
-
 **3. Key Insights**  
 
 **Demand Predictability:**  
