@@ -47,14 +47,25 @@ Variability in consumption suggested both seasonal and hourly patterns.
 
 **Visualization Insights**  
 
-Line plots: Displayed demand over time to identify upward or cyclical trends.
+Yearly Demand:  
+![](https://github.com/XeNoX36/Electricity-Distribution-Prediction/blob/main/YearlyDemand.png)  
 
-Boxplots: Highlighted fluctuations by hour and month.
+daily-hour Demand:  
+![](https://github.com/XeNoX36/Electricity-Distribution-Prediction/blob/main/dayly_hour_demand.png)  
+
+Demand vs Temperature:  
+![](https://github.com/XeNoX36/Electricity-Distribution-Prediction/blob/main/demand_vs_temp.png)  
+
+Monthly Demand:  
+![](https://github.com/XeNoX36/Electricity-Distribution-Prediction/blob/main/MonthlyDemand.png)  
 
 Correlation Heatmap:
 ```python
 sns.heatmap(data.corr(), annot=True, cmap="coolwarm")
 ```
+
+![](https://github.com/XeNoX36/Electricity-Distribution-Prediction/blob/main/demand_corr.png)  
+
 Revealed moderate correlation between hour, temperature, and electricity usage.
 
 **2. XGBoost Modeling and Implementation**
